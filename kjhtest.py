@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 #should be contained within the database wrapper module
 app.secret_key = 'your_secret_key'
-client = MongoClient("mongodb+srv://99apollo:kjh990319!@cluster0.rabp3fj.mongodb.net/?retryWrites=true&w=majority")
+client = MongoClient("")
 db = client['test_db']
 user_collection = db['users']
 initcoin_collection=db["initcoin"]
